@@ -21,7 +21,10 @@ const io = new Server(server, {
 // Make io accessible in controllers via app
 app.set('io', io);
 
-app.use(cors());
+app.use(cors({
+   origin: ['http://localhost:3000', 'https://brijwasi-frontend.vercel.app'],
+  credentials: true, 
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
