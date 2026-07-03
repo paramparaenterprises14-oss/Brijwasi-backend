@@ -22,7 +22,7 @@ const io = new Server(server, {
 app.set('io', io);
 
 app.use(cors({
-   origin: ['http://localhost:3000', 'https://brijwasi-frontend.vercel.app'],
+   origin: ['http://localhost:3000', 'https://brijwasi-frontend-g8pb3yula-sajid14.vercel.app'],
   credentials: true, 
 }));
 app.use(express.json());
